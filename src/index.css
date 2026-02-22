@@ -1,0 +1,53 @@
+/**
+ * ── 全域樣式重置 (Reset & Box Model) ──
+ * [box-sizing: border-box]: 讓 width 包含 padding 與 border，防止元素被撐開
+ * 移除所有預設的外距與內距，確保排版完全受控
+ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * ── 基礎版型與捲動行為 ──
+ * [overflow-x: hidden]: 防止因動畫或寬度計算錯誤產生的水平捲軸
+ * [scroll-behavior: smooth]: 讓 Navbar 點擊連結跳轉時，產生平滑滾動效果
+ */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/**
+ * ── 字體與渲染優化 ──
+ * [system-ui]: 優先使用作業系統的原生字體，效能最佳
+ * [-webkit-font-smoothing]: 在 macOS/iOS 上開啟字體抗鋸齒，讓文字看起來更細緻
+ */
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+ * ── 預設標籤樣式調整 ──
+ */
+a {
+  text-decoration: none; /* 移除超連結下劃線 */
+}
+
+button {
+  font-family: inherit; /* 讓按鈕繼承 body 的字體，否則瀏覽器常會跳回預設字體 */
+  cursor: pointer;      /* 滑鼠移上去自動顯示小手圖標 */
+}
+
+/**
+ * ── 通用動畫：閃爍 (Blink) ──
+ * 主要用於 Hero 元件的打字機游標效果
+ */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

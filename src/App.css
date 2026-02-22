@@ -1,0 +1,70 @@
+/**
+ * ── 根節點容器配置 ──
+ * 限制內容最大寬度，並確保在超大螢幕下始終保持居中
+ */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/**
+ * ── Logo 通用樣式 ──
+ * [will-change](https://developer.mozilla.org): 
+ * 提早通知瀏覽器此元素將有濾鏡變化，讓瀏覽器提前進行硬體加速優化。
+ */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms; /* 讓 Hover 時的陰影變化更平滑 */
+}
+
+/**
+ * ── Hover 互動特效 ──
+ * 使用 drop-shadow 濾鏡實作發光效果，比 box-shadow 更能貼合透明圖片輪廓
+ */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa); /* 預設 Vite Logo 藍紫色發光 */
+}
+
+/* 針對 React Logo 的特定發光色 (淺藍色) */
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/**
+ * ── 旋轉動畫定義 ──
+ */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/**
+ * ── 無障礙動效優化 ──
+ * [prefers-reduced-motion](https://developer.mozilla.org): 
+ * 只有在使用者沒有開啟「減少動態效果」系統設定時，才會執行旋轉動畫。
+ * 這對容易暈眩或有前庭系統疾患的使用者非常友善。
+ */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear; /* 每 20 秒旋轉一圈 */
+  }
+}
+
+/**
+ * ── 輔助樣式 ──
+ */
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888; /* 次要說明文字顏色 */
+}
