@@ -9,7 +9,7 @@ const ACCENT = '#00BFFF' // 強調色
  */
 const SKILLS = {
   '技能': ['HTML', 'CSS', 'JavaScript', 'Git', 'React'],
-  '也碰過': ['後端基礎', '資料庫基礎'],
+  '也碰過': ['基礎PHP', '基礎SQL'],
 }
 
 /**
