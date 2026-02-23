@@ -46,7 +46,7 @@ function useTypewriter(words, speed = 80, pause = 1800) {
 }
 
 // ── 欲展示的文字陣列 ──
-const TYPED_WORDS = ['Front-End Developer', '把想法變成網頁', '用程式解決生活中的小麻煩']
+const TYPED_WORDS = ['Front-End Developer','請給個機會']
 
 export default function Hero({ dark }) {
   // 呼叫打字動效 Hook
