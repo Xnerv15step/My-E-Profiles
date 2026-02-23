@@ -100,8 +100,8 @@ export default function About() {
         >
           {/* 左側：自我介紹文字 */}
           <p style={{ color: sub, lineHeight: 2, fontSize: 16 }}>
-            資工系畢業，擁有強大的自主學習能力，目前主要學習 React，對於AI工具也有些許的使用經驗。
-            若貴司有要求，十分願意致力於透過持續進修掌握最新技術（如 Vue 3, Next.js,Figma,TypeScript等）。
+            資工系畢業，擁有強大的自主學習能力，目前React和Vue都有學習，對於AI工具也有些許的使用經驗。
+            若貴司有要求，十分願意致力於透過持續進修掌握最新技術（如 Next.js,Figma,TypeScript等）。
             <br /><br />
             平時喜歡聽音樂、閱讀。
           </p>
