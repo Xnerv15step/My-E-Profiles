@@ -17,34 +17,18 @@ const PROJECTS = [
     repo: 'https://github.com/Xnerv15step/Magic-Cube-2.0',
   },
   {
-    title: '心情播放器',
-    desc: '根據當下心情推薦音樂氛圍與曲目，使用 Web Audio API 生成環境音效，搭配 Canvas 粒子背景。',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Web Audio API'],
-    featured: false,
-    demo: 'https://xnerv15step.github.io/Music-Feeling/',
-    repo: 'https://github.com/Xnerv15step/Music-Feeling',
-  },
-  {
-    title: 'Weather App',
-    desc: '串接天氣 API，查詢各城市即時天氣資訊。',
+    title: '資訊看板 Dashboard',
+    desc: '串接多個 API，提供統一的資料視覺化介面。',
     tags: ['JavaScript', 'API'],
-    featured: false,
+    featured: true, // 標記為精選專案，會呈現不同邊框色與標籤
     demo: 'https://xnerv15step.github.io/Weather-API/',
     repo: 'https://github.com/Xnerv15step/Weather-API',
-  },
-  {
-    title: 'Technical Documentation Page',
-    desc: '以魔方攻略為主題的技術文件頁面，具備固定側邊導覽列，結構清晰易讀。',
-    tags: ['HTML', 'CSS'],
-    featured: false,
-    demo: 'https://xnerv15step.github.io/Cube-List/',
-    repo: 'https://github.com/Xnerv15step/Cube-List',
   },
   {
     title: 'Book Inventory App',
     desc: '書籍庫存管理應用，支援欄位排序與狀態分類，使用 CSS 屬性選取器實作視覺樣式。',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    featured: false,
+    featured: true, // 標記為精選專案，會呈現不同邊框色與標籤
     demo: 'https://xnerv15step.github.io/Reading-List/',
     repo: 'https://github.com/Xnerv15step/Reading-List',
   },

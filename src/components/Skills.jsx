@@ -8,8 +8,7 @@ const ACCENT = '#00BFFF' // 強調色
  * 使用物件分組，方便擴充不同類別的技術（如：工具、框架、語文）
  */
 const SKILLS = {
-  '技能': ['HTML', 'CSS', 'JavaScript', 'Git', 'React'],
-  '也碰過': ['基礎PHP', '基礎SQL'],
+  '技能': ['HTML', 'CSS', 'JavaScript', 'Git', 'React','Vue','PHP','Node.js','MySQL'],
 }
 
 /**

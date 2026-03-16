@@ -60,7 +60,7 @@ function FadeSection({ children }) {
 const INFO_ITEMS = [
   ['🎓', '資工系畢業'],
   ['🎵', '聽音樂、閱讀'],
-  ['💻', '前端開發'],
+  ['💻', '前端開發、後端開發、網頁設計'],
   ['📍', 'Taiwan'],
 ]
 
@@ -101,7 +101,7 @@ export default function About() {
           {/* 左側：自我介紹文字 */}
           <p style={{ color: sub, lineHeight: 2, fontSize: 16 }}>
             資工系畢業，擁有強大的自主學習能力，目前React和Vue都有學習，對於AI工具也有些許的使用經驗。
-            若貴司有要求，十分願意致力於透過持續進修掌握最新技術（如 Next.js,Figma,TypeScript等）。
+            若貴司有要求，十分願意致力於透過持續進修掌握最新技術。
             <br /><br />
             平時喜歡聽音樂、閱讀。
           </p>
